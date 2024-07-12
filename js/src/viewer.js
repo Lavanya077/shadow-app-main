@@ -220,9 +220,7 @@ class Viewer {
       });
       const mesh = new THREE.Mesh(geometry, material);
 
-      // const geometry = new THREE.BoxGeometry(5,5,5);
-      // const material = new THREE.MeshBasicMaterial({ color: Math.random() * 0xffffff });
-      // const mesh = new THREE.Mesh(geometry, material);
+
 
       mesh.position.set(
         (Math.random() - 1) * 50,
