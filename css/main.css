@@ -1,0 +1,20 @@
+#axis-container{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 500px;
+   
+}
+
+button {
+    background-color: lightblue;
+    color: black;
+    border: solid;;
+    cursor: pointer;
+    margin: 5px
+   
+}
+
+/* button:hover {
+    background-color: deepskyblue;
+} */

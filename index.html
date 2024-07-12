@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My first three.js app</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "./node_modules/three/build/three.module.js",
+                    "three/addons/": "./node_modules/three/examples/jsm/"
+                }
+            }
+         </script>
+         <button id="button1">wireframe</button>
+         <button id="button2">dragselect</button>
+         <button id="button3">cube</button>
+         <button id="button4">sphere</button>
+         <button id="button5">cone</button>
+         <button id="button6">geometrics</button>
+         <button id="clearButton">Clear Scene</button>
+         <button id="changeColorButton">Change Colors</button>
+         <button id="multitexture">sixfacecube</button>
+         <button id="addfourcube">add4cube</button>
+         <button id="implodebutton">implode</button>
+         <button id="explodebutton">explode</button>
+         <button id="groups">groups</button>
+         <button id="singleTexture">Add Single Texture </button>
+
+         <div id="lights">
+            <button id="amlght">ambient light</button>
+            <button id="sptlt">spotlight</button>
+            <button id="dirlt">directionlight</button>
+         </div>
+         <label for="bgColor">Choose Background Color:</label>
+         <input type="color" id="bgcolor">
+         <button id="axes">axes</button>
+         
+
+   
+        <div id="scene-container" ></div>
+        <div id="axis-container" ></div>
+            
+
+
+                
+        <script type="module">
+             import { create } from './js/src/viewer.js';
+             create();
+
+        </script> 
+        <script type="module" src="./js/src/object.js"></script>
+        <script type="module" src="./css/main.css"></script>
+    </body>
+</html>
